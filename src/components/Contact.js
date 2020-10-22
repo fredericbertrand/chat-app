@@ -1,15 +1,15 @@
 import React from 'react';
 import './Contact.css';
 
-function Contact() {
+function Contact(characters) {
     return (
         <div className="Contact">
-            <img src="https://randomuser.me/api/portraits/men/34.jpg" className="avatar" alt="Theodore Dunn" />
+            <img src={characters.avatar} className="avatar" alt={characters.name} />
             <div >
-                <h2 className="name">Theodore Dunn</h2>
-                <div className="status status">
-                    <span className="status-online"></span>
-                    <span className="status-text">online</span>
+                <h2 className="name">{characters.name}</h2>
+                <div className="status">
+                    <span className={characters.online ? "status-online" : "status-offline"}></span>
+                    <span className="status-text">{characters.online ? "online" : "offline"}</span>
                 </div>
             </div>
         </div>
