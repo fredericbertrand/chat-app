@@ -11,10 +11,10 @@ function Contact(props) {
             <img src={props.avatar} className="avatar" alt={props.name} />
             <div >
                 <h2 className="name">{props.name}</h2>
-                <div className="status">
+                <div className="status" onClick={() => { setConnexion(!connexion) }} >
                     <button>
-                        <span onClick={() => { setConnexion(!connexion) }} className={connexion ? "status-online" : "status-offline"}></span>
-                        <span onClick={() => { setConnexion(!connexion) }} className="status-text">{connexion ? "online" : "offline"}</span>
+                        <span className={connexion ? "status-online" : "status-offline"}></span>
+                        <span className="status-text">{connexion ? "online" : "offline"}</span>
                     </button>
                 </div>
             </div>
