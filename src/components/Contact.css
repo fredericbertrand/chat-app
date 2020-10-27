@@ -1,5 +1,8 @@
 /* Component enclosing tag */
 .Contact {
+    margin: 1em;
+    border-radius: 5px;
+    border: 1px solid #313131; 
     padding: 1em;
     background: #555;
     width: 300px;
@@ -45,3 +48,16 @@
   .Contact .status .status-offline {
     background: #f4511e;
   }
+
+  button {
+    border-radius: 3px;
+    background-color: #555;
+    outline:none;
+  }
+
+  body {
+    background-color: rgb(65, 64, 64);
+  }
+
+ 
+ 
